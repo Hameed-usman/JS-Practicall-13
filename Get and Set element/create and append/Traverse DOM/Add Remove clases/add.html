@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Active Class</title>
+  <style>
+    .active {
+      background-color: green;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="myButton" onclick="toggleActiveClass()">Click Me</button>
+
+  <script>
+    function toggleActiveClass() {
+      let button = document.getElementById("myButton");
+      
+      button.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
